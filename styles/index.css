@@ -124,10 +124,15 @@ main{
     font-size: 14px;
     color: #787885;
 }
+.see-more{
+    color: #E02C6D;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: end;
+}
 /* last-section css*/
 .last-section{
     width: 1110px;
-    height: 270px;
     display: flex;
     margin-top: 100px;
     gap: 60px;
@@ -168,4 +173,62 @@ footer{
 .icon i{
    font-size: 30px;
    padding: 10px;
+}
+
+/* ----------------------
+    media query
+------------------------ */
+/* ----------------------
+    Mobile device
+------------------------ */
+@media screen and (max-width:668px) {
+    .fast-secation{
+        flex-direction: column-reverse;
+        background-position:70% 1%;
+        background-size: 90%;
+        gap: 20px;
+        padding: 0 5px 0  35px;
+        text-align: center;
+    }
+    .fast-secation-img-div img{
+        width:100%;
+    }
+    .fast-secation-title{
+        font-size: 28px;
+    }
+    .company-logo{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .container{
+        width:100%;
+        padding: 0;
+    }
+    .product{
+        width: 80%;
+    }
+    .product img{
+        Width:100%;
+    }
+    .collection{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .last-section{
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+    .last-section img{
+        width:80%;
+        
+    }
+    .last-sectin-title{
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+.heid{
+    display: none;
 }
