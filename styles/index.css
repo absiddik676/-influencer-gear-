@@ -24,6 +24,9 @@ ul li{
     font-weight: 500;
     font-size: 16px;
 }
+.fa-bars{
+    display: none;
+}
 ul li i{
    font-size: 20px;
 }
@@ -182,6 +185,21 @@ footer{
     Mobile device
 ------------------------ */
 @media screen and (max-width:668px) {
+    nav{
+        gap: 0;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .nav-title{
+        font-weight: 700;
+        font-size: 16px;
+    }
+    ul{
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 60px;
+    }
     .fast-secation{
         flex-direction: column-reverse;
         background-position:70% 1%;
@@ -219,6 +237,7 @@ footer{
         width: 90%;
         text-align: center;
         padding: 10px;
+      
     }
     .last-section img{
         width:80%;
@@ -228,6 +247,40 @@ footer{
         font-weight: 700;
         font-size: 24px;
     }
+}
+/* Tablet css */
+@media screen and (min-width:669px) and (max-width:992px) {
+    nav{
+        gap: 0;
+        align-items: center;
+    }
+    .fast-secation{
+        flex-direction: column-reverse;
+        background-size: 70%;
+        background-position:40% -40%;
+        gap: 20px;
+    }
+    .company-logo{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .container{
+        width:100%;
+        padding: 0;
+    }
+    .collection{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .last-section{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+    }
+
 }
 .heid{
     display: none;
